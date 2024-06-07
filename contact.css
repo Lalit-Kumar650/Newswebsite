@@ -1,0 +1,267 @@
+body,
+html {
+  height: 100%;
+  font-family: Helvetica, Verdana, sans-serif;
+  background-image: url(/banner-section-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url("/banner-section-bg.jpg");
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 4rem;
+  width: 4rem;
+  margin-top: 0.5em;
+  margin-left: 0.5rem;
+  margin-bottom: -3rem;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  list-style: none;
+  padding: 1em 0;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: all 300ms ease-in-out;
+  padding: 0 20px;
+}
+
+.navbar li a:hover {
+  color: #ff9900;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: auto;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: rgb(211, 28, 28); /* Set text color to black */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: all 300ms ease-in-out;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li a {
+    font-size: 1em;
+    padding: 10px 0;
+  }
+
+  .background-image h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    height: 3rem;
+    width: 3rem;
+    margin-top: 0.5em;
+    margin-left: 0.5rem;
+    margin-bottom: -2rem;
+  }
+
+  .background-image h1 {
+    font-size: 2em;
+  }
+}
+
+main {
+  flex: 1; /* Make main content grow and take available space */
+  padding-top: 5rem; /* To avoid overlap with the fixed header */
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  margin-top: 70px; /* Limit the width of the content */
+}
+
+.content-section {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  margin-top: -20px;
+}
+
+.content-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.content-section p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.read-more-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #ff9900;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 300ms ease-in-out;
+}
+
+.read-more-btn:hover {
+  background-color: #e68a00;
+}
+
+@media (max-width: 768px) {
+  .content-section h1 {
+    font-size: 2rem;
+  }
+
+  .content-section p {
+    font-size: 1rem;
+  }
+
+  .read-more-btn {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .content-section p {
+    font-size: 0.9rem;
+  }
+
+  .read-more-btn {
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+.footer-basic {
+  padding: 40px 0;
+  background-image: url(/banner-section-bg.jpg);
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-basic .social {
+  padding-bottom: 25px;
+}
+
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  margin: 0px;
+  color: rgb(255, 255, 255);
+  opacity: 0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  text-align: center;
+  font-size: 13px;
+  color: #d3d3d3;
+  margin-bottom: -30px;
+}
+
+/* contact us css starts here */
+
+.contact-form {
+  width: 40rem;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form [type="submit"] {
+  background: url(/banner-section-bg.jpg);
+  color: rgb(255, 255, 255);
+  border: none;
+  height: 2em;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
