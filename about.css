@@ -216,7 +216,7 @@ header {
   background-attachment: initial;
   background-origin: initial;
   background-clip: initial;
-  background-color: rgb(51, 51, 51);
+  background-image: url(/banner-section-bg.jpg);
   padding-top: 10px;
   padding-right: 20px;
   padding-bottom: 10px;
@@ -258,7 +258,7 @@ header {
   font-size: 40px;
   line-height: 64px;
   font-weight: 900;
-  color: #00b2eb;
+  color: #ffffff;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 40px;
